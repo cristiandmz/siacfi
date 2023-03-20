@@ -1,0 +1,13 @@
+CREATE OR REPLACE VIEW vista_activos AS select a.activo_id AS activo_id,a.codigo AS codigo,a.descripcion AS descripcion,a.activo AS activo,a.costo AS costo,a.auxiliar_id AS auxiliar_id,a.grupo_id AS grupo_id,a.fecha_incorporacion AS fecha_incorporacion,a.estado_id AS estado_id,a.observaciones AS observaciones,a.imagen AS imagen,a.url AS url,a.usu_creacion AS usu_creacion,a.usu_modificacion AS usu_modificacion,a.usu_eliminacion AS usu_eliminacion,a.fecha_creacion AS fecha_creacion,a.fecha_modificacion AS fecha_modificacion,a.fecha_eliminacion AS fecha_eliminacion,a.asignado AS estado_act,e.descripcion AS est, o.oficina,a.cantidad,x.nombre as auxiliar from 
+activos a 
+left join estado e 
+on
+a.estado_id = e.estado_id
+left join oficina o 
+on
+a.oficina_id = o.oficina_id
+left join auxiliar x 
+on
+a.auxiliar_id = x.auxiliar_id
+
+where a.activo!=0 ; 
