@@ -5,7 +5,7 @@ Credenciales/Login/acceso como administrador
 Usuario: admin
 Contraseña: 123admin654
 ----------------------------------------------------------------------------------------
-Instalar una version de xampp 7.4.33
+Instalar Xampp
 Link de instalador de Xampp
 https://drive.google.com/drive/folders/1UXbyo7Nvd1WvIB_snar0S7_DrpPeO-H-?usp=share_link
 ----------------------------------------------------------------------------------------
